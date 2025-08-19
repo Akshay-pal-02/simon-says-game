@@ -42,3 +42,15 @@ footer {
   font-size: 14px;
   border-radius: 8px;
 }
+
+#start-btn {
+  margin: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+

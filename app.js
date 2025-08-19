@@ -42,7 +42,7 @@ function btnFlash(btn) {
   btn.classList.add("flash");
   setTimeout(function () {
     btn.classList.remove("flash");
-  }, 300);
+  }, 1000);
 }
 
 // button click pe user ka input
@@ -82,3 +82,22 @@ let allBtns = document.querySelectorAll(".btn");
 for (btn of allBtns) {
   btn.addEventListener("click", btnPress);
 }
+
+// mobile button
+// Existing keypress event
+$(document).keypress(function() {
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+});
+
+// ✅ New button click event for mobile
+$("#start-btn").click(function() {
+    if (!started) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        started = true;
+    }
+});
