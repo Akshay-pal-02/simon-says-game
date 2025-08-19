@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simon Says Game</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Simon Says Game</h1>
-  <h2>Press any key to Start the Game</h2>
+  <h1>Simon Game</h1>
+  <h2>Press Start to Play</h2>
 
-  <div class="btn-container">
-    <div class="line-one">
-      <div class="btn red" id="red"></div>
-      <div class="btn yellow" id="yellow"></div>
-    </div>
-    <div class="line-two">
-      <div class="btn green" id="green"></div>
-      <div class="btn purple" id="purple"></div>
-    </div>
+  <!-- Author name (hides on start) -->
+  <p id="author">Made by Akshay Pal</p>
+
+  <!-- Start Button -->
+  <button id="start-btn">Start</button>
+
+  <!-- Game Buttons -->
+  <div class="container">
+    <div class="btn green" id="green"></div>
+    <div class="btn red" id="red"></div>
+    <div class="btn yellow" id="yellow"></div>
+    <div class="btn blue" id="blue"></div>
   </div>
-   <!--mobile button  -->
-   <h2 id="level-title">Press any key to Start the Game for mobile</h2>
-<button id="start-btn">Start Game</button>
-  
 
-  <footer>
-  <p>Made with ❤️ by Akshay</p>
-</footer>
-
-
-  <script src="app.js"></script>
+  <script src="game.js"></script>
 </body>
 </html>
